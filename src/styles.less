@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@amx-font-color       : rgb(118, 119, 115);
+@amx-font-active-color: lime;
+
+// @import './Fonts/ClinicaPro-Regular.otf';
+
+
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.amx {
+    &__body {
+        font-family: "ClinicaPro";
+        background-color: rgb(31, 31, 31);
+        background-image: url(./img/amx-bckgrnd.jpg);
+        background-size : cover;
+    }
+}
+
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "ClinicaPro";
+    // адрес шрифта и тип 
+    src        : url("./Fonts/ClinicaPro-Regular.otf");
+    font-style : normal;
+    font-weight: normal;
+}

@@ -15,8 +15,17 @@
 
     &__header-logo-block {
         display: flex;
+        justify-content: center;
+        align-items    : center;
 
         width: 25%;
+
+        color    : @amx-font-color;
+        font-size: 40px;
+
+        &:hover {
+            color: @amx-font-active-color;
+        }
     }
 
     &__header-nav {
@@ -81,5 +90,9 @@
     &__header-phone-text {
         color    : @amx-font-color;
         font-size: 32px;
+
+        &:hover {
+            color: @amx-font-active-color;
+        }
     }
 }

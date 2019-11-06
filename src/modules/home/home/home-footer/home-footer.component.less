@@ -1,4 +1,4 @@
-@import './../../../styles.less';
+@import './../../../../styles.less';
 
 
 
@@ -18,37 +18,37 @@
     }
 
     &__footer-design-block {
-        display: flex;
+        display        : flex;
         justify-content: center;
-        width: 25%;
+        width          : @amx-nav-left-block-width;
 
-        font-size: 12px;
+        font-size: 14px;
     }
 
     &__footer-nav {
         display        : flex;
         justify-content: center;
 
-        width: 50%;
+        width: @amx-nav-center-block-width;
     }
 
     &__footer-nav-ul {
         display            : flex;
         // border          : 2px solid @amx-font-color;
         // border-bottom   : 2px solid @amx-font-color;
-        padding            : 12px;
+        padding            : @amx-nav-ul-padding;
         // border-radius   : 5px;
     }
 
     &__footer-nav-li {
         list-style: none;
-        margin    : 0 36px;
+        margin    : @amx-nav-li-margin;
     }
 
     &__footer-link {
-        color          : gray;
+        color          : @amx-font-color;
         text-decoration: none;
-        font-size      : 24px;
+        font-size      : @amx-link-font-size;
 
         position: relative;
 
@@ -75,18 +75,17 @@
     }
 
 
-
     &__footer-phone-block {
         display        : flex;
         justify-content: center;
         align-items    : center;
 
-        width: 25%;
+        width: @amx-nav-right-block-width;
     }
 
     &__footer-phone-text {
         color    : @amx-font-color;
-        font-size: 32px;
+        font-size: @amx-phone-font-size;
 
         &:hover {
             color: @amx-font-active-color;

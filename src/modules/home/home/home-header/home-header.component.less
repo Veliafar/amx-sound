@@ -1,6 +1,4 @@
-@import './../../../styles.less';
-
-
+@import './../../../../styles.less';
 
 
 .amx {
@@ -13,12 +11,16 @@
         align-items    : center
     }
 
+    &__header-logo-svg {
+        width: 350px;
+    }
+
     &__header-logo-block {
         display: flex;
         justify-content: center;
         align-items    : center;
 
-        width: 25%;
+        width: @amx-nav-left-block-width;
 
         color    : @amx-font-color;
         font-size: 40px;
@@ -32,26 +34,26 @@
         display        : flex;
         justify-content: center;
 
-        width: 50%;
+        width: @amx-nav-center-block-width;
     }
 
     &__header-nav-ul {
         display         : flex;
-        border          : 2px solid @amx-font-color;
+        border          : @amx-border-style @amx-font-color;
         // border-bottom: 2px solid @amx-font-color;
-        padding         : 12px;
+        padding         : @amx-nav-ul-padding;
         // border-radius: 5px;
     }
 
     &__header-nav-li {
         list-style: none;
-        margin    : 0 36px;
+        margin    : @amx-nav-li-margin;
     }
 
     &__header-link {
-        color          : gray;
+        color          : @amx-font-color;
         text-decoration: none;
-        font-size      : 24px;
+        font-size      : @amx-link-font-size;
 
         position: relative;
 
@@ -61,19 +63,19 @@
         }
 
 
-        &:hover {
+        // &:hover {
 
-            &:after {
-                content   : '';
-                width     : 60%;
-                height    : 2px;
-                background: @amx-font-active-color;
+        //     &:after {
+        //         content   : '';
+        //         width     : 60%;
+        //         height    : 2px;
+        //         background: @amx-font-active-color;
 
-                position: absolute;
-                top     : 40px;
-                left    : 22%;
-            }
-        }
+        //         position: absolute;
+        //         top     : 40px;
+        //         left    : 22%;
+        //     }
+        // }
 
     }
 
@@ -84,12 +86,12 @@
         justify-content: center;
         align-items    : center;
 
-        width: 25%;
+        width: @amx-nav-right-block-width;
     }
 
     &__header-phone-text {
         color    : @amx-font-color;
-        font-size: 32px;
+        font-size: @amx-phone-font-size;
 
         &:hover {
             color: @amx-font-active-color;
